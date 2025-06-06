@@ -114,14 +114,15 @@ button:focus-visible {
 }
 
 .app-card-title {
-  color: #222; /* 진한 검정색 */
+  color: #222 !important;   /* 진한 검정 */
   font-weight: 700;
+  text-shadow: none !important;
 }
 
 .app-card-description {
-  color: #333; /* 어두운 회색 */
-  opacity: 1;  /* 완전 불투명 */
-  text-shadow: none; /* 그림자 제거 */
+  color: #333 !important;   /* 어두운 회색 */
+  opacity: 1 !important;
+  text-shadow: none !important;
 }
 
 .app-card-tag {
