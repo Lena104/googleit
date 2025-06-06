@@ -13,16 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* 파스텔 커러 테마 */
-  --primary-color: #99CDD8;
-  --secondary-color: #F3C3B2;
-  --text-color: #657166;
-  --light-bg: #DAEBE3;
-  --card-bg: #ffffff;
-  --accent-color-1: #FDE8D3;
-  --accent-color-2: #CFD6C2;
-  --accent-color-3: #F3C3B2;
-  --dark-accent: #657166;
-  --header-font: 'Dancing Script', cursive;
+  --primary-color: #2D3250;    /* 진한 네이비 */
+  --secondary-color: #424769;  /* 중간 톤 네이비 */
+  --text-color: #F7F7F7;       /* 밝은 회색 */
+  --light-bg: #1A1B26;         /* 어두운 배경 */
+  --card-bg: #24283B;          /* 카드 배경 */
+  --accent-color-1: #7AA2F7;   /* 밝은 파란색 */
+  --accent-color-2: #BB9AF7;   /* 라벤더 */
+  --accent-color-3: #F7768E;   /* 코랄 핑크 */
+  --dark-accent: #C0CAF5;      /* 밝은 라벤더 */
+  --header-font: 'Jost', sans-serif;
   --body-font: 'Noto Sans KR', sans-serif;
 }
 
