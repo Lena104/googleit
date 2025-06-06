@@ -12,18 +12,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* 모던한 다크 테마 */
-  --primary-color: #2D3250;    /* 진한 네이비 */
-  --secondary-color: #424769;  /* 중간 톤 네이비 */
-  --text-color: #F7F7F7;       /* 밝은 회색 */
-  --light-bg: #1A1B26;         /* 어두운 배경 */
-  --card-bg: #24283B;          /* 카드 배경 */
-  --accent-color-1: #7AA2F7;   /* 밝은 파란색 */
-  --accent-color-2: #BB9AF7;   /* 라벤더 */
-  --accent-color-3: #F7768E;   /* 코랄 핑크 */
-  --dark-accent: #C0CAF5;      /* 밝은 라벤더 */
+  /* 모던 다크 테마 */
+  --primary-color: #6C63FF;    /* 밝은 보라색 */
+  --secondary-color: #4A45B1;  /* 진한 보라색 */
+  --text-color: #E2E2E2;       /* 밝은 회색 (텍스트) */
+  --light-bg: #1A1B1E;         /* 어두운 배경 */
+  --card-bg: #2C2D31;          /* 카드 배경 */
+  --accent-color-1: #00D1FF;   /* 밝은 시안 */
+  --accent-color-2: #FF6B6B;   /* 코랄 핑크 */
+  --accent-color-3: #4ECDC4;   /* 민트 */
+  --dark-accent: #FFFFFF;      /* 흰색 (강조) */
   --header-font: 'Jost', sans-serif;
   --body-font: 'Noto Sans KR', sans-serif;
+}
 
 a {
   font-weight: 500;
@@ -84,4 +85,46 @@ button:focus-visible {
   .app-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.app-card {
+  background-color: var(--card-bg);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(108, 99, 255, 0.3);
+  border-color: rgba(108, 99, 255, 0.4);
+}
+
+.app-card-content {
+  padding: 1.8rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgba(44, 45, 49, 0.9), rgba(44, 45, 49, 1));
+}
+
+.app-card-title {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.app-card-description {
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.app-card-tag {
+  background-color: var(--primary-color);
+  color: var(--dark-accent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
