@@ -62,8 +62,8 @@ function App() {
   return (
     <div className="container">
       <header className="header">
-        <h1>GrowMe</h1>
-        <p>오픈소스를 활용한 앱 개발 프로젝트</p>
+        <h1>GoogleIt</h1>
+        <p>나에게 유용한 정보를 큐레이팅합니다 (feat. Perplexity)</p>
       </header>
 
       {loading ? (
